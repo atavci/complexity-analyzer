@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1E1E1E;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  display: flex;
+  margin-top: 80px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-column,
+.right-column {
+  flex: 1;
 }
+
+.left-column {
+  margin-right: 20px;
+}
+
+.code-editor {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+#analyze-btn {
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  }
+  
+  #analyze-btn:hover {
+  background-color: #1A9FDB;
+  }
+  
+  .right-column {
+  padding-left: 20px;
+  }
+  
+  .results {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 200px;
+  }
+  
+  .results h2 {
+  margin-bottom: 10px;
+  }
+  
+  .results ul {
+  list-style-type: none;
+  }
+  
+  .results li {
+  margin-bottom: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  main {
+  flex-direction: column;
+  }
+  
+  .left-column,
+  .right-column {
+  width: 100%;
+  }
+  
+  .left-column {
+  margin-right: 0;
+  margin-bottom: 20px;
+  }
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .pulse {
+    animation: pulse 1s ease-in-out infinite;
+  }
+  
+  
