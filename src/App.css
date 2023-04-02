@@ -125,4 +125,11 @@ code {
     animation: pulse 1s ease-in-out infinite;
   }
   
-  
+  .row-el {
+    grid-row: 1 / span 2
+  }
+
+  .grid-container {
+    display: grid;
+
+  }

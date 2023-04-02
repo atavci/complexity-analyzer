@@ -8,6 +8,7 @@
     "@codemirror/lang-javascript": "^6.1.4",
     "@codemirror/state": "^6.2.0",
     "@codemirror/view": "^6.9.2",
+    "@supabase/supabase-js": "^2.13.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
