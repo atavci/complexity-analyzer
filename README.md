@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Code Complexity Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+The Code Complexity Analyzer is a web application designed to analyze and calculate the time and space complexity of a given code piece in big O notation. It provides users with a detailed explanation of the complexity, helping them understand how efficient their code is and how to optimize it for better performance.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Supports multiple programming languages (Python, JavaScript, Java, C++, C#, you name it..)
+- Calculates time complexity in big O notation
+- Calculates space complexity in big O notation
+- Provides a detailed explanation of the calculated complexity
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- A modern web browser (Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari)
+- A stable internet connection
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Using the application
 
-### `npm run build`
+1. Visit the Complexity Analyzer website at [https://complexity-analyzer.vercel.app/](https://complexity-analyzer.vercel.app/).
+2. Copy and paste your code into the input field.
+3. Click the 'Analyze' button.
+5. The web app will process your code and display the results, including the time complexity, space complexity, and a detailed explanation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Understanding the Results
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The results will include the following information:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Time Complexity:** The number of operations the code takes as a function of its input size (n).
+- **Space Complexity:** The amount of memory the code consumes as a function of its input size (n).
+- **Detailed Explanation:** A step-by-step breakdown of how the complexity was calculated, including the identification of loops, function calls, and other factors affecting the code's performance.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We welcome contributions to the Code Complexity Calculator. If you'd like to contribute, please follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository on GitHub.
+2. Create a new branch for your changes.
+3. Implement your changes and commit them to your branch.
+4. Submit a pull request to the main repository for review.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Support
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you encounter any issues or have questions, you may open an issue in the repository.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Code Complexity Calculator is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
