@@ -16,8 +16,7 @@ const supabase = createClient(
 function findBigONotation(inputText) {
   const regex = /O\(\s*[a-zA-Z0-9\s+\-*/^]*\)/g;
   const matches = inputText.match(regex);
-
-  return matches || [];
+  return matches || [""];
 }
 
 
@@ -46,6 +45,7 @@ function App() {
   }
 
   function analyzeCode() {
+    handleResult("")
     setLoading(true);
     supabase.functions
       .invoke("complexity-analyzer", {
@@ -97,8 +97,7 @@ function App() {
         <section className="right-column">
           <div className="results">
             <div className="grid-container">
-              <h2 className="row-el">Complexity</h2>
-              <h2 className="row-el">{findBigONotation(results)[0] || ""}</h2>
+              <h2 className="row-el">Complexity{":"+findBigONotation(results)[0]}</h2>
             </div>
 
             {loading ? (
