@@ -88,7 +88,7 @@ function App() {
             />
           </div>
           <p className="description">
-            Paste your code above to analyze its complexity in Big O Notation.
+            Enter your code above to analyze its complexity in Big O Notation.
           </p>
           <button id="analyze-btn" onClick={analyzeCode}>
             Analyze
