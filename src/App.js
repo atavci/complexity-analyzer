@@ -34,6 +34,12 @@ function App() {
   );
   const [loading, setLoading] = useState(false);
 
+  const hightlightWithLineNumbers = (input, language) =>
+  highlight(input, language)
+    .split("\n")
+    .map((line, i) => `<span class='editorLineNumber'>${i + 1}</span>${line}`)
+    .join("\n");
+
   function handleResult(results) {
     console.log(results);
     if (results && results.choices && results.choices.length > 0) {
@@ -66,6 +72,7 @@ function App() {
       });
   }
 
+
   return (
     <div className="App">
       <header>
@@ -76,14 +83,16 @@ function App() {
           <div className="code-editor">
             <h2>Code</h2>
             <Editor
-              lassName="code"
+              textareaId="codeArea"
+              className="editor"
               value={code}
               onValueChange={(code) => setCode(code)}
-              highlight={(code) => highlight(code, languages.js)}
+              highlight={(code) => hightlightWithLineNumbers(code, languages.js)}
               padding={10}
               style={{
                 fontFamily: '"Fira code", "Fira Mono", monospace',
-                fontSize: 16,
+                fontSize: 18,
+                outline: 0
               }}
             />
           </div>
